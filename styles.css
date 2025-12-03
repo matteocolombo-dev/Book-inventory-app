@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.heading {
+  background-color: #8CFBDE;
+}
+
+td, th {
+  border: solid;
+  width: 8rem;
+  padding: 5px;
+}
+
+tr[class="read"] {
+  background: linear-gradient(to bottom, #00E07F, #02A961);
+}
+
+tr[class="to-read"] {
+  background: linear-gradient(to bottom, #FF7070, #A80000);
+}
+
+tr[class="in-progress"] {
+  background: linear-gradient(to bottom, #FFF316, #CBC324);
+}
+
+.status {
+  border-radius: 40px;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid black;
+  background-image: linear-gradient(#059E54);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid black;
+  background-image: linear-gradient(#FF3333);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid black;
+  background-image: linear-gradient(#ADA61F);
+}
+
+span[class^="rate"], span[class="status"] {
+  width: 80%;
+  height: 80%;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 80%;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to bottom, gold, gold);
+}
+
+ span[class~="two"] > :nth-child(-n+2) {
+background-image: linear-gradient(to bottom, gold, gold);
+}
+
+ span[class~="three"] span {
+background-image: linear-gradient(to bottom, gold, gold);
+}
